@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/u-reset.min.css">
+    <style>
+        .swiper-container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .swiper-slide{
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+
+            1
+        </div>
+        <div class="swiper-slide">
+
+            2
+        </div>
+        <div class="swiper-slide">
+
+            3
+        </div>
+        <div class="swiper-slide">
+
+            4
+        </div>
+    </div>
+</div>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical', // 垂直切换选项
+        loop: true // 循环模式选项
+    })
+</script>
+</body>
+</html>

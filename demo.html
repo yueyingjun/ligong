@@ -6,46 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>运动鞋</title>
-    <style>
-        div{
-
-            width:96px;height:48px;
-            border:2px solid  #000;
-            border-bottom: 48px solid #000;
-            border-radius:50% ;
-            position: absolute;left:0;right:0;
-            bottom: 0;top:0;margin: auto;
-            transition: all 2s linear;
-        }
-        div:before{
-            content: "";
-            width:8px;height:8px;border:20px solid #000;
-            background:#fff;
-            border-radius: 50%;
-
-            position: absolute;
-            left:0;top:50%;
-        }
-        div:after{
-            content: "";
-            width:8px;height:8px;border:20px solid #fff;
-            background:#000;
-            border-radius: 50%;
-
-            position: absolute;
-            right:0;top:50%;
-        }
-    </style>
-
-    <script>
-
-        window.onload=function (ev) {
-            var div=document.querySelector("div")
-            div.onmouseover=function (ev2) {
-                div.style.transform="rotate(90deg)"
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="demo.css">
+    <script src="demo.js"></script>
 </head>
 <body>
 
