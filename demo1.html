@@ -28,6 +28,7 @@
             background: #ccc;
         }
     </style>
+
 </head>
 <body>
     <div class="box">
@@ -40,5 +41,51 @@
         <div>7</div>
         <div>i</div>
     </div>
+
+    <script>
+
+        var datas={
+            49:{
+              div:0,audio:400+400*(1/8)
+            },
+            50:{
+                div:1,audio:400+400*(2/8)
+            },
+            51:{
+                div:2,audio:400+400*(3/8)
+            },
+            52:{
+                div:3,audio:400+400*(4/8)
+            },
+            53:{
+                div:4,audio:400+400*(5/8)
+            },
+            54:{
+                div:5,audio:400+400*(6/8)
+            },
+            55:{
+                div:6,audio:400+400*(7/8)
+            },
+            56:{
+                div:7,audio:400+400*(8/8)
+            }
+        }
+
+
+        var keys=document.querySelectorAll(".box div");
+
+        document.onkeydown=function (ev) {
+           code=ev.keyCode
+           keys[datas[code]["div"]].style.boxShadow="0 0 30px #000 inset"
+
+        }
+
+        document.onkeyup=function (ev) {
+            code=ev.keyCode
+
+            keys[datas[code]["div"]].style.boxShadow="none"
+
+        }
+    </script>
 </body>
 </html>
