@@ -123,7 +123,9 @@
 
 
     var keys = document.querySelectorAll(".box div");
+    // 创建音频总对象
     var audio=new AudioContext()
+    // 存储振荡器的变量
     var ao
     document.onkeydown = function (ev) {
         //获得按下键盘的键盘码
