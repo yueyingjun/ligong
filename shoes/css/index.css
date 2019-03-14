@@ -1,0 +1,25 @@
+.swiper-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.one{
+    width:100%;height:100%;
+    background: url("../images/slide1/bg.png") no-repeat;
+    background-size: contain;
+}
+
+.zhuangshi{
+    width:1.66rem;height:1.2rem;
+    background: url("../images/zhuangshi.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:.6rem;top:.75rem;
+}
+.fav{
+    width:1.53rem;height:1.5rem;
+    background: url("../images/slide1/fav.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    right:.6rem;top:.5rem;
+}
