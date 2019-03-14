@@ -13,3 +13,9 @@ var mySwiper = new Swiper('.swiper-container', {
     }
 })
 
+document.querySelector(".arrow").onclick=function (ev) {
+
+    mySwiper.slideNext();
+}
+
+
